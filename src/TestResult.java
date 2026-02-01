@@ -1,12 +1,14 @@
-//package test;
-
-//import domain.Exercise;
-
+import domain.Exercise;
 public class TestResult {
-
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        // вхідні дані
+        String birthDate = "07.01.2008"; 
+        int result = Exercise.Calculate(birthDate);
+        //вивід
+        System.out.println("---------------------------------");
+        System.out.println("Нумерологічний звіт");
+        System.out.printf("Аналізована дата: %s\n", birthDate);
+        System.out.printf("Обчислене число долі: %d\n", result);
+        System.out.println("---------------------------------");
     }
 }
